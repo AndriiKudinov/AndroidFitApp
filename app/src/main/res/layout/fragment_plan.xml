@@ -1,0 +1,410 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.example.demon.diplom.fragments.FragmentPlan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pushUps_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/pushups" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pushUps_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="@string/pushUps_String" />
+
+                <TextView
+                    android:id="@+id/push_week_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Week" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:layout_weight="0.009"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/start_image"
+                    android:layout_width="@android:dimen/notification_large_icon_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_dark"
+                    android:forceHasOverlappingRendering="true"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/start" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pullUps_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/pullups" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pullUps_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="@string/pullUps_String" />
+
+                <TextView
+                    android:id="@+id/pull_week_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Week" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:layout_weight="0.009"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/start_image2"
+                    android:layout_width="@android:dimen/notification_large_icon_width"
+                    android:layout_height="@android:dimen/notification_large_icon_height"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_dark"
+                    android:forceHasOverlappingRendering="true"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/start" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/plank_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/plank" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/plank_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="@string/plank_String" />
+
+                <TextView
+                    android:id="@+id/plank_week_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Week" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:layout_weight="0.009"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/start_image3"
+                    android:layout_width="@android:dimen/notification_large_icon_width"
+                    android:layout_height="@android:dimen/notification_large_icon_height"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_dark"
+                    android:forceHasOverlappingRendering="true"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/start" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/dips_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/dips" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dips_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="@string/dips_String" />
+
+                <TextView
+                    android:id="@+id/dips_week_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Week" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:layout_weight="0.009"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/start_image4"
+                    android:layout_width="@android:dimen/notification_large_icon_width"
+                    android:layout_height="@android:dimen/notification_large_icon_height"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:forceHasOverlappingRendering="true"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/start" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sirUps_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/situps" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sitUps_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="@string/sitUps_String" />
+
+                <TextView
+                    android:id="@+id/sit_week_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Week" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:layout_weight="0.009"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/start_image5"
+                    android:layout_width="@android:dimen/notification_large_icon_width"
+                    android:layout_height="@android:dimen/notification_large_icon_height"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_dark"
+                    android:forceHasOverlappingRendering="true"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/start" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/squats_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/squats" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/squats_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="@string/squats_String" />
+
+                <TextView
+                    android:id="@+id/squats_week_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Week" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:layout_weight="0.009"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/start_image6"
+                    android:layout_width="@android:dimen/notification_large_icon_width"
+                    android:layout_height="@android:dimen/notification_large_icon_height"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_light"
+                    android:forceHasOverlappingRendering="true"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/start" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Fitness App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="plan_item">План тренировок</string>
+    <string name="exercises_item">Упражнения</string>
+    <string name="reminder_item">Напоминание</string>
+    <string name="pushUps_String">Отжимания</string>
+    <string name="pullUps_String">Подтягивания</string>
+    <string name="dips_String">Брусья</string>
+    <string name="plank_String">Планка</string>
+    <string name="sitUps_String">Скручивания</string>
+    <string name="squats_String">Приседания</string>
+    <string name="tools_item">Tools</string>
+    <string name="acc_notification_icon">ic_notif_two</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_push">PushActivity</string>
+    <string name="title_activity_pull">PullActivity</string>
+</resources>

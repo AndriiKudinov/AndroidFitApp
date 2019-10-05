@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.demon.diplom.SitActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sit_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Неделя"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sit_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Количество повторений"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="334dp">
+
+            <ProgressBar
+                android:id="@+id/sit_Progress"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="239dp"
+                android:layout_height="253dp"
+                android:layout_gravity="center"
+                android:progress="0"
+                android:progressDrawable="@drawable/circle"
+                android:rotation="-90"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sit_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="11"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/sit_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="90sp"
+                android:background="#000000"
+                android:text="Готово"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/sit_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="16sp"
+                android:background="#000000"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/sit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="16sp"
+                android:background="#000000"
+                android:text="-"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sit_ex_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8sp"
+                android:text="11"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sit_ex_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8sp"
+                android:text="13"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sit_ex_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8sp"
+                android:text="14"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sit_ex_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8sp"
+                android:text="11"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sit_ex_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="24sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8sp"
+                android:text="8+"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sit_button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Вернуться к плану"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
